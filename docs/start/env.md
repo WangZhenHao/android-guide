@@ -10,7 +10,7 @@
 - 安装之后， `Tools` > `SDK Manager` 修改SKD保存路径，不然撑爆C盘
 
 <p>
-  <img src="../.vitepress/public/start/env/1-1.png" alt="vitepress init screenshot" style="border-radius:8px">
+  <img src="../.vitepress/public/start/env/1-1.jpg" alt="vitepress init screenshot" style="border-radius:8px">
 </p>
 
 ## 创建安卓项目
