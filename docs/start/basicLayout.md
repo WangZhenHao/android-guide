@@ -89,7 +89,7 @@ GreetingText(
 
 2. 选择图片
  <p>
-  <img src="../.vitepress/public/start/basicLayout/4.png" alt="vitepress init screenshot" style="border-radius:8px">
+  <img src="../.vitepress/public/start/basicLayout/4.jpg" alt="vitepress init screenshot" style="border-radius:8px">
 </p>
 
 3. QUALTIFER TYPE选择`Density` ,VALUE选择`No Density`，点击`Next`
