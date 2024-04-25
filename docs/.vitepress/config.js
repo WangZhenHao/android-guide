@@ -18,8 +18,8 @@ export default defineConfig({
         text: '准备工作',
         items: [
           { text: 'android-stdio安装和使用', link: '/start/env' },
-          { text: 'Kotlin语法', link: '/start/kotlin' },
           { text: '基础布局', link: '/start/basicLayout' },
+          { text: 'Kotlin语法', link: '/start/kotlin' }
         ],
       }
     ],
