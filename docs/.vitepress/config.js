@@ -19,7 +19,8 @@ export default defineConfig({
         items: [
           { text: 'android-stdio安装和使用', link: '/start/env' },
           { text: '基础布局', link: '/start/basicLayout' },
-          { text: 'Kotlin语法', link: '/start/kotlin' }
+          { text: 'Kotlin语法', link: '/start/kotlin' },
+          { text: '摇色子案例', link: '/start/buttonApp' }
         ],
       }
     ],
