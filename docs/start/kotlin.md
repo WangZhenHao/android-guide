@@ -261,7 +261,12 @@ class SmartLightDevice(deviceName: String, deviceCategory: String) :
 </p>
 
 6. 定义属性委托
-通过by关键字定义
+
+通过by关键字定义,将属性的 getter 和 setter 委托给另一个对象
+
+-现委托的类需要提供以下方法：
+`getValue()`：用于处理属性的 getter 方法。
+`setValue()`：用于处理属性的 setter 方法（如果属性是可变的）。
 
 ```java
 class RangeRegulator(
