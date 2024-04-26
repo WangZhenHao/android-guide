@@ -20,7 +20,7 @@ class Person {
 ```
 ## if/else 和when 条件语句
 
-```Kotlin
+```java
 // if的用法
 fun main() {
     val trafficLightColor = "Yellow"
@@ -48,7 +48,7 @@ fun main() {
 
 ```
 ## null的使用
-```kotlin
+```java
 // ？可以赋值null
 fun main() {
     var favoriteActor: String? = "Sandra Oh"
@@ -113,7 +113,7 @@ Methods  方法
 Constructors 构造函数  创建class的实例的特殊函数成员贯穿程序的定义（一个特殊的成员函数，它在定义类的整个程序中创建类的实例。）
 
 2. getter和setter函数
-```kotlin
+```java
 var speakerVolume = 2
 // 定义变量 背后的工作
     get() = field  
@@ -123,7 +123,7 @@ var speakerVolume = 2
 ```
 
 3. 定义构造函数
-```kotlin
+```java
 // 定义一个没用参数的构造函数
 class SmartDevice constructor() {
     ...
@@ -173,7 +173,7 @@ class SmartDevice(val name: String, val category: String) {
 - HAS-A 关系
 对象可以拥有其他类的实例，其他类的实例没有成为为类本身的实例（对象可以拥有另一个类的实例，而不必实际成为该类本身的实例）
 
-```kotlin
+```java
 // IS-A 关系
 class SmartLightDevice(deviceName: String, deviceCategory: String) :
     SmartDevice(name = deviceName, category = deviceCategory) {
@@ -469,7 +469,7 @@ fun main() {
 ## 使用函数类型和lambda表达式（拉姆达表达式）
 
 - 保存一个函数在变量里面
-```kotlin
+```java
 fun main() {
     val trickFunction = ::trick
 
@@ -482,7 +482,7 @@ fun trick() {
 ```
 
 - lambda表达式定义函数
-```kotlin
+```java
 fun main() {
     val trickFunction = trick
     trick()

@@ -14,7 +14,7 @@ Composable 函数特点
 
 ## 添加Text 元素
 
-```kotlin
+```java
 @Composable
 fun GreetingText(message: String, modifier: Modifier = Modifier) {
     Text(
@@ -28,7 +28,7 @@ fun GreetingText(message: String, modifier: Modifier = Modifier) {
 默认情况下SP单位和DP单位是同样的。
 
 
-```kotlin
+```java
 @Composable
 fun GreetingText(message: String, modifier: Modifier = Modifier) {
     Text(
@@ -96,7 +96,7 @@ GreetingText(
 
 4. 点击`Improt`
 
-```kotlin
+```java
 
 val image = painterResource(R.drawable.androidparty)
 Image(
@@ -113,7 +113,7 @@ Kotlin提供一个特别语法：当最后一个参数是函数，把函数作�
 
 当你通过函数作为参数，你可以用`Trailing lambda`语法，而不是用圆括号，可以用花括号替代
 
-```kotlin
+```java
 Row(
     content = {
         Text("Some text")
