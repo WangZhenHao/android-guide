@@ -23,8 +23,9 @@ export default defineConfig({
           { text: '摇色子案例', link: '/start/buttonApp' },
           { text: "自动化测试", link: "/start/automatedTest" }
         ],
-      },{
-        text: "进阶"，
+      },
+      {
+        text: "进阶",
         items: [
           { text: '更多kotlin语法',link: '/advance/kotlinMore' }
         ]
