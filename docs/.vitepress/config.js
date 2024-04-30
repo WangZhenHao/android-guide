@@ -20,8 +20,14 @@ export default defineConfig({
           { text: 'android-stdio安装和使用', link: '/start/env' },
           { text: '基础布局', link: '/start/basicLayout' },
           { text: 'Kotlin语法', link: '/start/kotlin' },
-          { text: '摇色子案例', link: '/start/buttonApp' }
+          { text: '摇色子案例', link: '/start/buttonApp' },
+          { text: "自动化测试", link: "/start/automatedTest" }
         ],
+      },{
+        text: "进阶"，
+        items: [
+          { text: '更多kotlin语法',link: '/advance/kotlinMore' }
+        ]
       }
     ],
   },

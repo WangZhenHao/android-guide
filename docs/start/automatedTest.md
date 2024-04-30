@@ -1,12 +1,34 @@
-## UI和数据的交互
+# 自动化测试
 
-状态提升是移动状态的调用者使其变成组件无状态的模式（状态提升是一种将状态移动到其调用者以使组件无状态的模式。）
-State hoisting is a pattern of moving state to its caller to make a component stateless.
+- 主要的断言函数
+```java
+// https://developer.android.com/reference/junit/framework/Assert
+assertEquals()
 
+assertNotEquals()
 
-## 自动化测试
+assertTrue()
+
+assertFalse()
+
+assertNull()
+
+assertNotNull()
+
+assertThat()
+
+```
 
 - 本地测试
+
+1. 根据路径新建一个class类,命名为：`TipCalculatorTests`
+
+<p>
+  <img src="../.vitepress/public/start/automatedTest/1.png" alt="vitepress init screenshot" style="border-radius:8px">
+</p>
+
+2. 具体代码
+
 ```java
 package com.example.greetingcard
 
@@ -29,6 +51,17 @@ class TipCalculatorTests {
 ```
 
 - 仪器化测试
+
+1. 根据路径新建一个class类,命名为：`TipUiTests`
+
+<p>
+  <img src="../.vitepress/public/start/automatedTest/2.png" alt="vitepress init screenshot" style="border-radius:8px">
+</p>
+<p>
+  <img src="../.vitepress/public/start/automatedTest/3.png" alt="vitepress init screenshot" style="border-radius:8px">
+</p>
+
+2. 具体代码
 
 ```java
 package com.example.greetingcard
