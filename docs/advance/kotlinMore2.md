@@ -230,7 +230,7 @@ softBakedMenu.forEach {
 
 ```
 
-- grupBy()
+- groupBy()
 
 ```java
 val groupedMenu = cookies.groupBy { it.softBaked }
