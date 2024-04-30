@@ -27,7 +27,8 @@ export default defineConfig({
       {
         text: "进阶",
         items: [
-          { text: '更多kotlin语法',link: '/advance/kotlinMore' }
+          { text: '更多kotlin语法-1',link: '/advance/kotlinMore' },
+          { text: '更多kotlin语法-2',link: '/advance/kotlinMore2' }
         ]
       }
     ],
