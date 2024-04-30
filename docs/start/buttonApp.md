@@ -16,7 +16,9 @@ Spacer(modifier = Modifier.height(16.dp))
 - mutableStateOf
 - mutableStateOf()函数返回可以观察函数，但`result`变量改变，触发重排，`reslut`的值重新映射，UI就会刷新
 
+```java
 var result by remember { mutableStateOf(1) }
+```
 
 
 ## 调试
