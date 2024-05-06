@@ -130,3 +130,118 @@ fun DogItemButton(expanded: Boolean, onClick: () -> Unit, modifier: Modifier = M
 ```
 
 > 使用`Modifier.weight`去填充空间
+
+3. 使用animateContentSize
+
+<p>
+  <img src="../.vitepress/public/advance/kotlinMore/2.jpg" alt="vitepress init screenshot" style="border-radius:8px">
+</p>
+
+```java
+package com.example.greetingcard
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            GreetingCardTheme {
+                AffirmationsApp()
+            }
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun AffirmationsApp() {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(10.dp),
+    ) {
+        Column {
+            DogItem()
+            DogItem()
+            Text(text = "test1", color = MaterialTheme.colorScheme.tertiaryContainer, fontSize = 20.sp)
+
+            Text(text = "test2", color = MaterialTheme.colorScheme.primaryContainer, fontSize = 20.sp)
+        }
+
+    }
+}
+
+@Composable
+fun DogItem() {
+    var expanded by remember { mutableStateOf(false) }
+    val tartColor by animateColorAsState(
+        targetValue = if (expanded) MaterialTheme.colorScheme.tertiaryContainer else MaterialTheme.colorScheme.primaryContainer,
+        label = "colorTest"
+    )
+
+    Card(modifier = Modifier.padding(top = 10.dp)) {
+        Column(modifier = Modifier
+            .animateContentSize(
+                animationSpec = spring(
+                    dampingRatio = Spring.DampingRatioNoBouncy,
+                    stiffness = Spring.StiffnessMedium
+                )
+            )
+            .background(color = tartColor)
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier
+                .fillMaxWidth()
+                .padding(10.dp)) {
+                Surface(
+                    modifier = Modifier.size(40.dp),
+                    shape = CircleShape,
+                    color = Color.Cyan
+                ) {}
+                DogInformation()
+                Spacer(modifier = Modifier.weight(1f))
+                DogItemButton(expanded = expanded, onClick = { expanded = !expanded })
+            }
+            if (expanded) {
+                DogHobby()
+            }
+
+        }
+    }
+}
+@Composable
+fun DogHobby() {
+    Column(modifier = Modifier.padding(top = 5.dp, bottom = 10.dp, start = 10.dp)) {
+        Text(
+            text = "about",
+            style = MaterialTheme.typography.labelSmall
+        )
+        Text(
+            text = "stringResource(dogHobby)",
+            style = MaterialTheme.typography.bodyLarge
+        )
+    }
+}
+
+@Composable
+fun DogInformation() {
+    Column(modifier = Modifier.padding(start = 10.dp)) {
+        Text(text = "dog name", fontWeight = FontWeight.Bold, modifier = Modifier.padding(bottom = 4.dp))
+        Text(text = "dog age 18")
+    }
+}
+
+@Composable
+fun DogItemButton(expanded: Boolean, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    IconButton(
+        onClick = onClick,
+        modifier = modifier
+    ) {
+        Icon(
+            imageVector = if (expanded) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore,
+            contentDescription = "more",
+            tint = MaterialTheme.colorScheme.secondary
+        )
+    }
+}
+
+
+```
