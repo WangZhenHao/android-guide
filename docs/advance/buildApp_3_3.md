@@ -5,7 +5,7 @@
 - 颜色
 
 <p>
-  <img src="../.vitepress/public/advance/kotlinMore/1.png" alt="vitepress init screenshot" style="border-radius:8px">
+  <img src="../.vitepress/public/advance/buildApp/1.png" alt="vitepress init screenshot" style="border-radius:8px">
 </p>
 
 前面两个字母代表透明度，如果没有，默认100%， #00表示0%透明度， #FF表示100%透明度
@@ -134,7 +134,7 @@ fun DogItemButton(expanded: Boolean, onClick: () -> Unit, modifier: Modifier = M
 3. 使用animateContentSize
 
 <p>
-  <img src="../.vitepress/public/advance/kotlinMore/2.jpg" alt="vitepress init screenshot" style="border-radius:8px">
+  <img src="../.vitepress/public/advance/buildApp/2.jpg" alt="vitepress init screenshot" style="border-radius:8px">
 </p>
 
 ```java
