@@ -50,6 +50,13 @@ class TipCalculatorTests {
 }
 ```
 
+3. 点击测试
+
+<p>
+  <img src="../.vitepress/public/start/automatedTest/4.png" alt="vitepress init screenshot" style="border-radius:8px">
+</p>
+
+
 - 仪器化测试
 
 1. 根据路径新建一个class类,命名为：`TipUiTests`
@@ -60,6 +67,9 @@ class TipCalculatorTests {
 <p>
   <img src="../.vitepress/public/start/automatedTest/3.png" alt="vitepress init screenshot" style="border-radius:8px">
 </p>
+
+
+
 
 2. 具体代码
 
@@ -97,3 +107,9 @@ class TipUITests {
     }
 }
 ```
+
+3. 点击测试
+
+<p>
+  <img src="../.vitepress/public/start/automatedTest/5.png" alt="vitepress init screenshot" style="border-radius:8px">
+</p>
