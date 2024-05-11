@@ -1,5 +1,7 @@
 # 架构组件
 
+> 实例代码： https://github.com/google-developer-training/basic-android-kotlin-compose-training-unscramble/tree/main
+
 ## 生命周期
 
 - 日志输出

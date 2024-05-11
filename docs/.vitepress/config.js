@@ -34,6 +34,8 @@ export default defineConfig({
           { text: '构建优美的app',link: '/advance/buildApp_3_3' },
           { text: '架构组件',link: '/advance/architectureComponent_4_1' },
           { text: '导航',link: '/advance/navigation_4_2' },
+          { text: '适配屏幕尺寸',link: '/advance/adaptScreen_4_3' },
+          { text: '连接互联网',link: '/advance/connectInternet_5_1' },
         ]
       }
     ],

@@ -38,6 +38,21 @@ val question3 = Question<Int>("How many days are there between full moons?", 28,
 
 ```
 
+- valueOf 转换指定 name 为枚举值，若未匹配成功，会抛出IllegalArgumentException
+
+```java
+enum class CupcakeScreen(val title: String) {
+    Start(title = "R.string.app_name"),
+    Flavor(title = "R.string.choose_flavor"),
+    Pickup(title = "R.string.choose_pickup_date"),
+    Summary(title = "R.string.order_summary")
+}
+fun main() {
+    val currentScreen = CupcakeScreen.valueOf("Start")
+    println(currentScreen.Start)
+}
+```
+
 ## 使用数据类
 
 但使用`data`关键字定义类的时候，下面的方法会实现了
