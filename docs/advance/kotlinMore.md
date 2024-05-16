@@ -214,7 +214,7 @@ fun main() {
 ```
 
 2. 正常的扩展类的方法
-```
+```java
 class Quiz {
     val question1 = 1
     val question2 = 2

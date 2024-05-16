@@ -36,6 +36,8 @@ export default defineConfig({
           { text: '导航',link: '/advance/navigation_4_2' },
           { text: '适配屏幕尺寸',link: '/advance/adaptScreen_4_3' },
           { text: '连接互联网',link: '/advance/connectInternet_5_1' },
+          { text: '连接互联网2',link: '/advance/connectInternet2_5_1' },
+          { text: '显示互联网图片',link: '/advance/connectInternet3_5_2' },
         ]
       }
     ],
